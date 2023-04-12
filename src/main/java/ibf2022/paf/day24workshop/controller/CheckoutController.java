@@ -26,6 +26,7 @@ public class CheckoutController {
     }
 
     @PostMapping
+    @SuppressWarnings("unchecked")
     public String postCheckout(HttpSession session, Model model, @RequestParam("name") String name, @RequestParam("ship_address") String ship_address, @RequestParam("notes") String notes) throws OrderException {
         List<LineItem> lineItems = (List<LineItem>) session.getAttribute("cart");
         PurchaseOrder purchaseOrder = (PurchaseOrder) session.getAttribute("checkoutCart");

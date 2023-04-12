@@ -19,6 +19,7 @@ import jakarta.servlet.http.HttpSession;
 public class CartController {
 
     @PostMapping(consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+    @SuppressWarnings("unchecked")
     public String postChart(HttpServletRequest httpRequest, Model model, HttpSession session) {
 
         List<LineItem> lineItems = (List<LineItem>) session.getAttribute("cart");
