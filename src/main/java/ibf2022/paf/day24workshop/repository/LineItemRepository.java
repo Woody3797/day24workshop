@@ -18,10 +18,9 @@ public class LineItemRepository {
     JdbcTemplate template;
 
     public static BigDecimal discount;
+    
     public List<FruitProducts> getProducts() {
-        
-        String getAllquery = DBQueries.GET_ALL_PRODUCTS;
-        return template.query(getAllquery, (rs, rownum) -> {
+        return template.query(DBQueries.GET_ALL_PRODUCTS, (rs, rownum) -> {
             FruitProducts fruitProducts = new FruitProducts();
             fruitProducts.setId(rs.getInt("id"));
             fruitProducts.setName(rs.getString("name"));

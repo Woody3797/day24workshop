@@ -66,11 +66,7 @@ public class PurchaseOrder {
 
     @Override
     public String toString() {
-        return "PurchaseOrder [orderId=" + orderId + ", name=" + name + ", orderDate=" + orderDate + ", ship_address="
-                + ship_address + ", notes=" + notes + ", lineItems=" + lineItems + "]";
+        return "PurchaseOrder [orderId=" + orderId + ", name=" + name + ", orderDate=" + orderDate + ", ship_address=" + ship_address + ", notes=" + notes + ", lineItems=" + lineItems + "]";
     }
 
-    
-    
-    
 }

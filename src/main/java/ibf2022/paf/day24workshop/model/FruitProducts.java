@@ -50,11 +50,7 @@ public class FruitProducts {
 
     @Override
     public String toString() {
-        return "FruitProducts [id=" + id + ", name=" + name + ", standardPrice=" + standardPrice + ", discount="
-                + discount + "]";
+        return "FruitProducts [id=" + id + ", name=" + name + ", standardPrice=" + standardPrice + ", discount=" + discount + "]";
     }
 
-
-    
-    
 }

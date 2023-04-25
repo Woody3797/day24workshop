@@ -39,13 +39,9 @@ public class LineItem {
         this.quantity = quantity;
     }
 
-
-
     @Override
     public String toString() {
         return "LineItem [itemId=" + itemId + ", quantity=" + quantity + ", product=" + product + "]";
     }
-
-    
     
 }
